@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+</head>
+<body>
+    <a href="baloon.html"><button onclick="buy()" class="btn">Buy</button></a>
+    <p class = "text"></p>
+    <div>
+        <h3>Get the game</h3>
+        <img src="teampresenting.png" alt="loading...">
+        <p class="moneytoget">MMK 9000</p>
+    </div>    
+</body>
+<style>
+    body{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        border: black solid 2px;
+        width: 565px;
+        height: 509px;
+        padding: 50px;
+        margin-left: 50px;
+        }
+        img{
+        width: 550px;
+        height: 400px;
+        }
+</style>
+<script>
+    let p = document.querySelector(".text")
+    function buy(){
+        p.innerHTML = "sold out";
+    }
+</script>
+</html>
